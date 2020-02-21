@@ -1,0 +1,30 @@
+panier:
+  add: Panier ajouté
+  title: Liste des produits dans le panier
+  delete: Supprimer
+  aucun : Il n'y a aucun produit dans le panier
+  a: Il y a
+  b: dans le panier
+  total: Total
+  nom: Nom
+  quantite: Quantite
+  montant: Montant
+
+produit:
+  nom: Nom
+  quantite: Quantite
+  montant: Montant
+  prix: Prix
+  photo: Photo
+  addpanier: Ajout produit au panier
+  delete: Supprimer le produit4
+  title: Listes des produits
+  aucun: Il n'y a aucun produit dans le panier
+  add: Ajouter un produit
+  file: Erreur photo
+  added: Produit ajouté
+  filedelete: Photo supprimée
+  fileupdate: Photo modifiée
+  addpanier: Produit ajouté au panier
+  introuvable: Produit introuvable
+  deleteproduit: Produit supprimé

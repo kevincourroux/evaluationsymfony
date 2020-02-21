@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{produit.nom}}{% endblock %}
+
+{% block body %}
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>{{ 'produit.photo'|trans}}</th>
+                    <th>{{ 'produit.nom'|trans}}</th>
+                    <th>{{ 'produit.quantite'|trans}}</th>
+                    <th>{{ 'produit.prix'|trans}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>
+                        {% if produit.photo is not empty %}
+                                <img src="{{ asset('uploads/'~ produit.photo) }}" style="max-width: 200px;">
+                        {% endif %}
+                        </td>
+                        <td>
+                            {{produit.nom}}
+                        </td>
+                        <td>{{produit.quantite}}</td>
+                        <td>{{produit.prix}}</td>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+
+
+	<h2>{{ 'produit.addpanier'|trans}}</h2>
+    {{form(ajout_panier)}}
+
+    <a href="{{path('produit_delete', {'id':produit.id})}}" class="btn btn-danger">{{ 'produit.delete'|trans}}</a>
+{% endblock %}
